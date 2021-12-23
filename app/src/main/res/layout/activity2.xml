@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bgd">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <ImageView
+            android:layout_width="275dp"
+            android:layout_height="86dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="25pt"
+            android:background="@drawable/logo1"></ImageView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view"
+            android:layout_width="match_parent"
+            android:layout_height="549dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="15dp"
+            card_view:cardCornerRadius="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="BIODATA"
+                android:textSize="8pt"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20pt"
+                android:text="Nama :"
+                android:textSize="7pt"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/showNama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30pt"
+                android:text="Nama"
+                android:textSize="7pt" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="40pt"
+                android:text="No Telepon :"
+                android:textSize="7pt"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/showNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="50pt"
+                android:text="No Telepon"
+                android:textSize="7pt" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="60pt"
+                android:text="Email :"
+                android:textSize="7pt"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/showEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="70pt"
+                android:text="Email"
+                android:textSize="7pt" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="80pt"
+                android:text="Alamat :"
+                android:textSize="7pt"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/showAlamat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="90pt"
+                android:text="Alamat"
+                android:textSize="7pt" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="100pt"
+                android:text="Jenis Kelamin :"
+                android:textSize="7pt"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/showJK"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="110pt"
+                android:text="Jenis Kelamin"
+                android:textSize="7pt" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="120pt"
+                android:text="Umur :"
+                android:textSize="7pt"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/showUmur"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="130pt"
+                android:text="Umur"
+                android:textSize="7pt" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="140pt"
+                android:text="Produk Favorit :"
+                android:textSize="7pt"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/showKategori"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="150pt"
+                android:text="Kategori Produk"
+                android:textSize="7pt" />
+
+
+            <TextView
+                android:id="@+id/keterangan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="180pt"
+                android:text="Harap Tekan Tombol Dibawah untuk Menambah Wishlist."
+                android:textSize="7pt" />
+
+            <Button
+                android:id="@+id/btn_kembali"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="200pt"
+                android:backgroundTint="@color/purple_200"
+                android:onClick="Kembali"
+                android:text="Manage your Wishlist"
+                android:textColor="@color/white"
+                android:textSize="5pt" />
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</RelativeLayout>
